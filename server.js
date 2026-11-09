@@ -8,7 +8,7 @@ const app= express()
 
 
 app.use(express.json())
-connectdb()
+await connectdb()
 app.use(cors({
     origin:"*"
 }))
